@@ -31,7 +31,7 @@ const store=new mongodbsession({
 
 //firebase notification code is here 
  
-var serviceAccount = require(path.join(__dirname, 'assets/','shreyas-project-70669-firebase-adminsdk-fbsvc-546be36010.json'));
+const serviceAccount = JSON.parse(process.env.FIREBASE_CONFIG);
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
