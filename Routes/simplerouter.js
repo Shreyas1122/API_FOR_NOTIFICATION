@@ -282,6 +282,11 @@ fetchimages=async (req,res,next)=>{
 
   }
 
+const activeserver=(req,res,next)=>{
+ Console.log("The server is active don't worry guys");
+ res.send("task executing");
+}
+
   
 module.exports={
   Register,
@@ -294,6 +299,8 @@ module.exports={
   Downloadpdf,
   Updateinformation,
   deleteinformation,
-  postnotification
+  postnotification,
+ activeserver
+ 
  
 }
