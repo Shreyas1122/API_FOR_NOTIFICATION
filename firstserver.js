@@ -96,6 +96,7 @@ app.get("/Download", firstrouter.Downloadpdf);
 app.put("/update/:id",firstrouter.Updateinformation);
 app.delete("/delete/:id", firstrouter.deleteinformation);
 app.post("/postnotification", firstrouter.postnotification);
+app.get("/activeserver",firstrouter.activeserver);
 
 
 
